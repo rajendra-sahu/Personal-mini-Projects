@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div align="center">
+  Input Text: <input type="text" id="fname" [(ngModel)]="input" #inputRef="ngModel"><br>
+  <button  class = "btn-primary"(click)="translate(inputRef.value)">Translate</button><br>  
+  
+  <textarea rows="4" cols="50" >{{output}}</textarea>
+  
+</div>
+
+
